@@ -46,6 +46,11 @@ CScript CBlock::GetPaidPayee(CAmount nAmount) const
     {
         if (it->nValue == nAmount) return it->scriptPubKey;
     }
+    
+    for (auto it = tx.vout.rbegin(); it != tx.vout.rend(); ++it)
+    {
+        return it->scriptPubKey;
+    }
 
     return CScript();
 }
