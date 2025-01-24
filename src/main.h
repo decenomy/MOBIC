@@ -133,8 +133,6 @@ static const bool DEFAULT_BLOCK_SPAM_FILTER = true;
 static const unsigned int DEFAULT_BLOCK_SPAM_FILTER_MAX_SIZE = 100;
 /** Default for -blockspamfiltermaxavg, maximum average size of an index occurrence in the block spam filter */
 static const unsigned int DEFAULT_BLOCK_SPAM_FILTER_MAX_AVG = 10;
-/** Default for block payee verification timeout */
-static const unsigned int DEFAULT_BLOCK_PAYEE_VERIFICATION_TIMEOUT = 5 * MINUTE_IN_SECONDS;
 
 /** Identifier of the old client */
 static const char OLD_CLIENT_NAME[] = "ModernInvestmentCoin Core";
